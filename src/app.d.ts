@@ -4,9 +4,17 @@ declare global {
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
-		// interface PageData {}
+		interface PageData {
+			user: SpotifyApi.CurrentUsersProfileResponse | null;
+			title?: string;
+			color?: string | null;
+		}
 		// interface Platform {}
 	}
 }
 
-export {};
+declare interface Window {
+	refreshPromise: Promise<Response> | null;
+}
+
+// export {};
