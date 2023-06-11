@@ -2,6 +2,8 @@
 
 Spotify Clone using the [`SvelteKit Framework`](https://kit.svelte.dev/) and the [`Spotify Web API`](https://developer.spotify.com/documentation/web-api).
 
+App based on the [`Svelte & SvelteKit: The Complete Guide`](https://www.udemy.com/course/svelte-and-sveltekit/) from [`Ali Alaa`](https://www.udemy.com/user/ali-alaa-3/)
+
 ## Running on you local machine
 
 Clone the repository into you computer, and run:
@@ -37,5 +39,3 @@ At this point the app is running in your machine. Open a new tab with the URL ht
 
 ## Considerations
 The App is not finished yet, therefore you may encounter some bugs.
-
-App based on the [`Svelte & SvelteKit: The Complete Guide`](https://www.udemy.com/course/svelte-and-sveltekit/) from [`Ali Alaa`](https://www.udemy.com/user/ali-alaa-3/)
