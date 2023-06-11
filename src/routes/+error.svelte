@@ -5,7 +5,7 @@
 	import LogoutButton from '$components/LogoutButton.svelte';
 
 	let isRetrying = false;
-	const retrRoutes = ['album/[id]', 'playlist/[id]'];
+	const retryRoutes = ['/album/[id]', '/playlist/[id]', '/artist/[id]'];
 </script>
 
 <svelte:head>
@@ -30,7 +30,7 @@
 		</div>
 	{/if}
 
-	{#if ![404, 401].includes($page.status) && $page.route.id && retrRoutes.includes($page.route.id)}
+	{#if ![404, 401].includes($page.status) && $page.route.id && retryRoutes.includes($page.route.id)}
 		<div class="buttons">
 			<Button
 				disabled={isRetrying}

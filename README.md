@@ -28,7 +28,7 @@ At this point the app is running in your machine. Open a new tab with the URL ht
 
 ## App Screenshots
 ### Login Page
-![Login Page](screenshots/LOGINPAGE.png?raw=true "LOGIN Page")\
+![Login Page](screenshots/LOGINPAGE.png?raw=true "LOGIN Page")
 
 ### Home Page
 ![Home Page](screenshots/HOMEPAGE.png?raw=true "Home Page")
