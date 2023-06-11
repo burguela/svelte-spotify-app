@@ -27,8 +27,11 @@ npm run dev
 At this point the app is running in your machine. Open a new tab with the URL http://localhost:5173/ and start using the Spotify Clone.
 
 ## App Screenshots
-![Home Page](screenshots/HOMEPAGE.png?raw=true "Home Page")\
-![Login Page](screenshots/LOGINPAGE.png?raw=true "LOGIN Page")
+### Login Page
+![Login Page](screenshots/LOGINPAGE.png?raw=true "LOGIN Page")\
+
+### Home Page
+![Home Page](screenshots/HOMEPAGE.png?raw=true "Home Page")
 
 ## Considerations
 The App is not finished yet, therefore you may encounter some bugs.
