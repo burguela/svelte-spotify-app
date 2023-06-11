@@ -12,11 +12,13 @@ npm install
 
 Then go to [`Spotify Developer Website`](https://developer.spotify.com/documentation/web-api/concepts/apps) and create a new App with Redirect URIs to http://localhost:5173/. Save the CLIENT_ID and CLIENT_SECRET.
 
-Create a .env file in the cloned repository with:\
-SPOTIFY_APP_CLIENT_ID=(your client id here)\
-SPOTIFY_APP_CLIENT_SECRET=(your client secret here)\
-SPOTIFY_BASE_URL=https://api.spotify.com/v1\
-BASE_URL=http://localhost:5173\
+Create a .env file in the cloned repository with:
+```env
+SPOTIFY_APP_CLIENT_ID=(your client id here)
+SPOTIFY_APP_CLIENT_SECRET=(your client secret here)
+SPOTIFY_BASE_URL=https://api.spotify.com/v1
+BASE_URL=http://localhost:5173
+```
 
 To start the development server, run:
 ```bash
