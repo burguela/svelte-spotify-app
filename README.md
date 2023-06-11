@@ -20,7 +20,7 @@ BASE_URL=http://localhost:5173\
 
 To start the development server, run:
 ```bash
-# Install all dependencies
+# Start development server
 npm run dev
 ```
 
