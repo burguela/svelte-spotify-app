@@ -1,38 +1,29 @@
-# create-svelte
+# Spotify Clone
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Spotify Clone using the [`SvelteKit Framework`](https://kit.svelte.dev/) and the [`Spotify Web API`](https://developer.spotify.com/documentation/web-api).
 
-## Creating a project
+## Running on you local machine
 
-If you're seeing this, you've probably already done this step. Congrats!
-
+Clone the repository into you computer, and run:
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# Install all dependencies
+npm install
 ```
 
-## Developing
+Then go to [`Spotify Developer Website`](https://developer.spotify.com/documentation/web-api/concepts/apps) and create a new App with Redirect URIs to http://localhost:5173/. Save the CLIENT_ID and CLIENT_SECRET.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Create a .env file in the cloned repository with:
+SPOTIFY_APP_CLIENT_ID=(your client id here)
+SPOTIFY_APP_CLIENT_SECRET=(your client secret here)
+SPOTIFY_BASE_URL=https://api.spotify.com/v1
+BASE_URL=http://localhost:5173
 
+To start the development server, run:
 ```bash
+# Install all dependencies
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+At this point the app is running in your machine. Open a new tab with the URL http://localhost:5173/ and start using the Spotify Clone.
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+App based on the [`Svelte & SvelteKit: The Complete Guide`](https://www.udemy.com/course/svelte-and-sveltekit/) from [`Ali Alaa`](https://www.udemy.com/user/ali-alaa-3/)

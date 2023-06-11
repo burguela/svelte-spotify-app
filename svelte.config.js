@@ -20,7 +20,8 @@ const config = {
 			$components: 'src/lib/components',
 			$assets: 'src/assets',
 			$actions: 'src/lib/actions',
-			$helpers: 'src/lib/helpers'
+			$helpers: 'src/lib/helpers',
+			$stores: 'src/lib/stores'
 		}
 	}
 };

@@ -19,8 +19,16 @@ export const load: LayoutServerLoad = async ({ cookies, fetch, url }) => {
 
 	if (profileRes.ok) {
 		const profile = await profileRes.json();
+		let userAllPlaylists: SpotifyApi.PlaylistObjectSimplified[] = [];
+		const userPlaylistsRes = await fetch('/api/spotify/me/playlists?limit=50');
+		if (userPlaylistsRes.ok) {
+			const userAllPlaylistsResJSON: SpotifyApi.ListOfCurrentUsersPlaylistsResponse =
+				await userPlaylistsRes.json();
+			userAllPlaylists = userAllPlaylistsResJSON.items;
+		}
 		return {
-			user: profile as SpotifyApi.CurrentUsersProfileResponse
+			user: profile as SpotifyApi.CurrentUsersProfileResponse,
+			userAllPlaylists
 		};
 	}
 	if (profileRes.status === 401 && refreshToken) {
